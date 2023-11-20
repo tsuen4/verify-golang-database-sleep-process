@@ -7,6 +7,12 @@ import (
 	"strconv"
 )
 
+/*
+command example:
+
+	"go run cmd/request/main.go <path> [<count>]"
+	"go run cmd/request/main.go select-ctx 10"
+*/
 func main() {
 	if err := run(os.Args); err != nil {
 		fmt.Fprintf(os.Stderr, "error: %s", err)
